@@ -1,5 +1,6 @@
 from random import randint
 import subprocess
+import random
 from os.path import exists
 #puzzle 69
 count = 0
@@ -21,7 +22,7 @@ list.append(randomList)
 while exists('Found.txt') == False:
     if exists('Found.txt') == True:
         exit()
-    rand = randint(0x10000000ff, 0x1fffffff00) # currently 9 0's and f's 
+    rand = random.randint(0x10000000ff, 0x1fffffff00) # currently 9 0's and f's 
     hexify = hex(rand)
     stripped = hexify[2:]
     file = open("list.txt", 'r') # add this to rest
