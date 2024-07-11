@@ -1,5 +1,6 @@
 from random import randint
 import subprocess
+import random
 from os.path import exists
 
 count = 0
@@ -15,7 +16,7 @@ list.append(randomList)
 while exists('Found.txt') == False:
     if exists('Found.txt') == True:
         exit()
-    rand = randint(0x20000000000000000000, 0x3fffffffffffffffffff) #19 f's
+    rand = random.randint(0x20000000000000000000, 0x3fffffffffffffffffff) #19 f's
     hexify = hex(rand)
     stripped = hexify[2:]
     file = open("listk.txt", 'r')
