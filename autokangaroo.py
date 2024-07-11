@@ -1,6 +1,5 @@
 from random import randint
 import subprocess
-from time import sleep
 from os.path import exists
 
 count = 0
