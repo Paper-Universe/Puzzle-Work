@@ -17,4 +17,4 @@ and finally you will need a file.txt the program will use this to put the start 
 # AutoKeyhunt
 using Keyhunt-Cuda by WanderingPhilosopher seems to be the way to go .
 
-Using a 3080 with the settings in the file are optimal, your temps stay at or below 75C on your mem and hot spot temps using PL 70 while your MK's are at 1700 MK/s
+Using a 3080 with the settings in the file are optimal, your temps stay at or below 75C on your mem and hot spot temps using PL 75 while your MK's are at 1800 MK/s
