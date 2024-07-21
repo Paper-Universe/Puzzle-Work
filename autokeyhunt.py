@@ -13,12 +13,6 @@ file = open("list.txt", 'r') # Make an empty list.txt file before you start prog
 randomList = file.read()
 list.append(randomList)
 
-#16,777,215 for 6 44 bit
-#268,435,455 for 7 40 bit
-#4,294,967,295 for 8 36 bit
-#274,877,906,943 for 9 32 bit
-#1,099,511,627,775 for 10 28 bit
-
 while exists('Found.txt') == False:
     if exists('Found.txt') == True:
         exit()
