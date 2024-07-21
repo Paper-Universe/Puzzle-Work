@@ -22,7 +22,7 @@ list.append(randomList)
 while exists('Found.txt') == False:
     if exists('Found.txt') == True:
         exit()
-    rand = random.randint(0x1000000, 0x1ffffff) # currently 6 0's and f's or 40 bit
+    rand = random.randint(0x1000000, 0x1ffffff) # currently 6 0's and f's or 44 bit
     hexify = hex(rand)
     stripped = hexify[2:]
     file = open("list.txt", 'r') # add this to rest
