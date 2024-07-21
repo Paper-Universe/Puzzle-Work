@@ -6,23 +6,23 @@ import random
 count = 0
 spaces = 0
 range2 = 18 # Amount of total digits in hex range
-total = 268435455 # Max Range in Decimal. Max Range = (end range - start)
+total = 16777215 # Max Range in Decimal. Max Range = (end range - start)
 
 list = []
 file = open("list.txt", 'r') # Make an empty list.txt file before you start program
 randomList = file.read()
 list.append(randomList)
 
-#16,777,215 for 6
-#268,435,455 for 7
-#4,294,967,295 for 8
-#274,877,906,943 for 9
-#1,099,511,627,775 for 10
+#16,777,215 for 6 44 bit
+#268,435,455 for 7 40 bit
+#4,294,967,295 for 8 36 bit
+#274,877,906,943 for 9 32 bit
+#1,099,511,627,775 for 10 28 bit
 
 while exists('Found.txt') == False:
     if exists('Found.txt') == True:
         exit()
-    rand = random.randint(0x10000000, 0x1fffffff) # currently 7 0's and f's or 40 bit
+    rand = random.randint(0x1000000, 0x1ffffff) # currently 6 0's and f's or 40 bit
     hexify = hex(rand)
     stripped = hexify[2:]
     file = open("list.txt", 'r') # add this to rest
@@ -52,4 +52,5 @@ while exists('Found.txt') == False:
         continue
 
 
-#40 bit seems to be the sweet spot only 15 keys less than 44 bit but marginally more keys than 36 or 32 bit in the same time
+#if my math is correct 44 bit is the best on a 3080 at pl 75 the difference in keys searched between 40 and 44 in the same time frame is 120,946,279,070.25 keys with 44 bit searching more
+#the difference between 44 and 48 is only 15 keys the same as the difference between 48 and 52 of course my math could be wrong
