@@ -14,10 +14,10 @@ with open('list2.txt', 'r') as file3:
 list = []
 file = open("list2.txt", 'r') # Make an empty list.txt file before you start program
 randomList = file.read()
-total = (268435455 - spaces)
+total = (16777215 - spaces)
 print(total)
 while count in range(total):
-    rand = random.randint(0x10000000, 0x1fffffff) # currently 7 0's and f's or 40 bit
+    rand = random.randint(0x1000000, 0x1ffffff) # currently 6 0's and f's or 44 bit
     hexify = hex(rand)
     stripped = hexify[2:]
     file = open("list2.txt", 'r')
