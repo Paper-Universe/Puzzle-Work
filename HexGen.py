@@ -20,8 +20,7 @@ while count in range(total):
     rand = random.randint(0x1000000, 0x1ffffff) # currently 6 0's and f's or 44 bit
     hexify = hex(rand)
     stripped = hexify[2:]
-    file = open("list2.txt", 'r')
-    randomList = file.read()
+    file.read()
     if stripped not in list or randomList:
         list.append(stripped)
         count += 1
