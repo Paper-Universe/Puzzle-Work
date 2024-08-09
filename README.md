@@ -18,3 +18,7 @@ and finally you will need a file.txt the program will use this to put the start 
 using Keyhunt-Cuda by WanderingPhilosopher seems to be the way to go .
 
 Using a 3080 with the settings in the file are optimal, your temps stay at or below 75C on your mem and hot spot temps using PL 75 while your MK's are at 1800 MK/s
+# Pubhash
+Searches for the hash160 of a puzzle using a random stride that you can set.
+
+Found.txt privkey and address will not be the found you will have to look at the last one on the list and convert to hex that hex will be your winner.
