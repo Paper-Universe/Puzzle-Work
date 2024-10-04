@@ -22,3 +22,5 @@ Using a 3080 with the settings in the file are optimal, your temps stay at or be
 Searches for the hash160 of a puzzle using a random stride that you can set.
 
 Found.txt privkey and address will not be the found you will have to look at the last one on the list and convert to hex that hex will be your winner.
+#Pubkey_stride.py
+Got the idea from a user vneos in https://bitcointalk.org/index.php?topic=1306983.6260 forum, This is not optimized and can go significantly faster since I haven't understood how to optimize iceland2k14's point_increment yet
